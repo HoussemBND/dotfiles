@@ -1,0 +1,3 @@
+#!/bin/bash
+kubectl config use-context shared-services-stage
+kubectl -n dynamic-experience-mysql-proxy port-forward pods/distillery-mysql-proxy-distillery-8559d8c55-kjf5v 3306:3307
